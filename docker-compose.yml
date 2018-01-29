@@ -1,0 +1,8 @@
+version: '2'
+services:
+  cerebro:
+    image: jicecold/elasticsearch-cerebro:0.7.2
+    volumes:
+      - ./conf/application.conf:/opt/cerebro/conf/application.conf
+    ports:
+      - "9000:9000"
